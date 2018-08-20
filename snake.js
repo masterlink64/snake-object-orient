@@ -89,6 +89,9 @@ class Snake {
     return this.head().isOutOfBound();
   }
 
+  // TODO: a crash into another snake function where it returns a boolean to see if it crashed
+  // into another snake
+
   // so you don't want other class to know about the .parts, abstract the details away
   head() {
     return this.parts[0];
@@ -158,7 +161,7 @@ class Game {
     this.keyListener = this.onkey.bind(this);
   }
 
-  // TODO: fix refill food so that it does not refill on the snake
+  // TODO: fix refill food so that it does not refill on the snake- DONE
   refillFood() {
     // somehow check if new pt is NOT on snake if on make then make new one 
     while (this.food.length < this.numFood) {
