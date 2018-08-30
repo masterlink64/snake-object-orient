@@ -1,0 +1,23 @@
+.game-wrapper {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-wrapper > h1 {
+  color: gold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+}
+
+#board {
+  width: 600px;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+}
